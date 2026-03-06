@@ -1,7 +1,7 @@
 import bottle from "../assets/Bottle.png";
 import Cartoon from "../assets/Cartoon.png";
 import { motion } from "framer-motion";
-import River from "../assets/river.mp4";
+import River from "../assets/River.mp4";
 export default function Hero() {
   return (
     <section className="relative pt-40 pb-28 overflow-hidden">
