@@ -1,19 +1,20 @@
 import bottle from "../assets/Bottle.png";
 import Cartoon from "../assets/Cartoon.png";
 import { motion } from "framer-motion";
-
+import river from "../assets/river.mp4";
 export default function Hero() {
   return (
     <section className="relative pt-40 pb-28 overflow-hidden">
 
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src="/src/assets/river.mp4" type="video/mp4" />
-      </video>
+ <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute top-0 left-0 w-full h-full object-cover"
+>
+  <source src="/river.mp4" type="video/mp4" />
+</video>
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40"></div>
