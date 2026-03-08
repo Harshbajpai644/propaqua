@@ -2,6 +2,7 @@ import bottle from "../assets/Bottle.png";
 import Hero from "../components/Hero";
 import review from "../assets/review.mp4";
 import CustomBottleSlider from "../components/CustomBottleSlider";
+import waterbg from "../assets/waterbg.png";
 
 export default function Home() {
   return (
@@ -30,100 +31,157 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
 
-            {/* 500ML */}
-            <div className="relative bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 border overflow-hidden">
+            {/* 500 ML */}
+            <div
+              className="relative rounded-3xl shadow-xl p-10 text-center hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              style={{
+                backgroundImage: `url(${waterbg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="absolute inset-0 bg-black/10"></div>
 
-              <div className="absolute w-5 h-5 bg-blue-200 rounded-full opacity-40 animate-bounce top-6 left-6"></div>
-              <div className="absolute w-4 h-4 bg-blue-300 rounded-full opacity-40 animate-bounce bottom-10 right-10"></div>
-              <div className="absolute w-3 h-3 bg-blue-200 rounded-full opacity-40 animate-bounce top-20 right-16"></div>
+              <div className="relative z-10 flex justify-center mb-8">
 
-              <img
-                src={bottle}
-                alt="PROPAQUA 500ml"
-                className="h-56 mx-auto mb-6 rounded-lg transition-transform duration-300 hover:scale-110 relative z-10"
-              />
+  <div className="relative z-10 flex justify-center mb-8">
 
-              <h3 className="font-semibold text-lg relative z-10">
+  <img
+    src={bottle}
+    alt="PROPAQUA bottle"
+    className="h-80 w-auto object-contain rounded-3xl shadow-2xl hover:scale-105 transition duration-500"
+  />
+
+</div>
+</div>
+
+              <h3 className="font-semibold text-xl relative z-10 text-black">
                 PROPAQUA – 500 ml
               </h3>
 
-              <p className="text-gray-500 text-sm mt-2 relative z-10">
+              <p className="text-gray-200 text-sm mt-2 relative z-10">
                 Pure. Sustainable. Reliable.
               </p>
 
-              <p className="mt-4 text-2xl font-bold text-red-600 relative z-10">
+              <p className="mt-4 text-3xl font-bold text-red-500 relative z-10">
                 ₹10
               </p>
 
               <a
                 href="https://wa.me/919644905294?text=I want to order 500ml bottle"
                 target="_blank"
-                className="inline-block mt-6 bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition relative z-10"
+                className="inline-block mt-6 bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition relative z-10"
               >
                 Order Now
               </a>
-
             </div>
 
+
             {/* 1 LITRE */}
-            <div className="relative bg-white rounded-2xl shadow-lg p-6 text-center hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 border overflow-hidden">
+            <div
+              className="relative rounded-3xl shadow-xl p-10 text-center hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              style={{
+                backgroundImage: `url(${waterbg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="absolute inset-0 bg-black/10"></div>
 
-              <div className="absolute w-5 h-5 bg-blue-200 rounded-full opacity-40 animate-bounce top-6 left-6"></div>
-              <div className="absolute w-4 h-4 bg-blue-300 rounded-full opacity-40 animate-bounce bottom-10 right-10"></div>
-              <div className="absolute w-3 h-3 bg-blue-200 rounded-full opacity-40 animate-bounce top-20 right-16"></div>
+              <div className="relative z-10 flex justify-center mb-8">
 
-              <img
-                src={bottle}
-                alt="PROPAQUA 1 Litre"
-                className="h-56 mx-auto mb-6 rounded-lg transition-transform duration-300 hover:scale-110 relative z-10"
-              />
+  <img
+    src={bottle}
+    alt="PROPAQUA 1 Litre"
+    className="h-80 w-auto object-contain rounded-3xl shadow-2xl hover:scale-105 transition duration-500"
+  />
 
-              <h3 className="font-semibold text-lg relative z-10">
+</div>
+
+              <h3 className="font-semibold text-xl relative z-10 text-black">
                 PROPAQUA – 1 Litre
               </h3>
 
-              <p className="text-gray-500 text-sm mt-2 relative z-10">
+              <p className="text-gray-200 text-sm mt-2 relative z-10">
                 Pure. Sustainable. Reliable.
               </p>
 
-              <p className="mt-4 text-2xl font-bold text-red-600 relative z-10">
+              <p className="mt-4 text-3xl font-bold text-red-500 relative z-10">
                 ₹20
               </p>
 
               <a
                 href="https://wa.me/919644905294?text=I want to order 1 litre bottle"
                 target="_blank"
-                className="inline-block mt-6 bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition relative z-10"
+                className="inline-block mt-6 bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition relative z-10"
               >
                 Order Now
               </a>
-
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* VIDEO REVIEW / AD */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
 
-          <h2 className="text-3xl font-bold mb-10">
-            Watch Our Custom Bottle Example
+      {/* REVIEWS */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-6">
+
+          <h2 className="text-3xl font-bold text-center mb-14">
+            What People Say About PROPAQUA
           </h2>
 
-          <video
-            controls
-            autoPlay
-            muted
-            loop
-            className="w-full rounded-2xl shadow-2xl"
-          >
-            <source src={review} type="video/mp4" />
-          </video>
+          <div className="grid md:grid-cols-3 gap-10 mb-16">
+
+            <div className="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
+              <p className="text-gray-600">
+                "The water tastes very fresh and clean. I really like the quality and the affordable price. Highly recommended!"
+              </p>
+              <div className="mt-4 font-semibold text-gray-800">
+                Rohit Sharma
+              </div>
+              <div className="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
+              <p className="text-gray-600">
+                "PROPAQUA bottles are perfect for events and daily use. The packaging looks premium and the water quality is excellent."
+              </p>
+              <div className="mt-4 font-semibold text-gray-800">
+                Neha Gupta
+              </div>
+              <div className="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
+              <p className="text-gray-600">
+                "Affordable and pure drinking water. Our office now uses PROPAQUA bottles regularly."
+              </p>
+              <div className="mt-4 font-semibold text-gray-800">
+                Aman Verma
+              </div>
+              <div className="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+
+          </div>
+
+          {/* VIDEO REVIEW */}
+          <div className="max-w-4xl mx-auto">
+            <video
+              controls
+              autoPlay
+              muted
+              loop
+              className="w-full rounded-2xl shadow-2xl"
+            >
+              <source src={review} type="video/mp4" />
+            </video>
+          </div>
 
         </div>
       </section>
+
 
       {/* CUSTOM PRINTING */}
       <section className="py-24 bg-gradient-to-r from-red-50 via-white to-red-50 text-center">
@@ -138,7 +196,6 @@ export default function Home() {
             corporate events, hotels, cafes, showrooms and brand promotions.
           </p>
 
-          {/* IMAGE SLIDER */}
           <CustomBottleSlider />
 
           <a
